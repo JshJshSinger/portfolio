@@ -1409,6 +1409,14 @@ figcaption {
   align-items: flex-start;
 }
 
+.footer-brand {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
 .footer-brand.w--current {
   display: -webkit-box;
   display: -webkit-flex;
