@@ -202,7 +202,6 @@ figcaption {
 }
 
 .paragraph-bigger.cc-bigger-white-light {
-  opacity: 0.6;
   color: #fcfffd;
   text-align: center;
   -webkit-transform-style: preserve-3d;
@@ -1274,7 +1273,7 @@ figcaption {
 
 .logos-title-small {
   position: relative;
-  padding: 60px 0px 20px;
+  padding: 0px 0px 20px;
   border-bottom: 0px none #e4ebf3;
 }
 
@@ -1694,7 +1693,16 @@ figcaption {
 }
 
 .text-block-2 {
+  width: 90%;
+  margin-right: auto;
   margin-bottom: 10px;
+  margin-left: auto;
+  text-align: justify;
+  letter-spacing: 0.018rem;
+  -webkit-column-count: 1;
+  column-count: 1;
+  -webkit-column-gap: 51px;
+  column-gap: 51px;
 }
 
 .hero-without-image {
@@ -1717,7 +1725,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 85%;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-orient: vertical;
@@ -4557,6 +4565,14 @@ figcaption {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.24);
 }
 
+.list-2 {
+  padding-left: 20px;
+}
+
+.list-3 {
+  padding-left: 20px;
+}
+
 .container-22 {
   display: block;
   max-width: 80%;
@@ -4594,6 +4610,8 @@ figcaption {
 }
 
 .list-4 {
+  padding-left: 20px;
+  line-height: 20px;
   text-decoration: none;
   -webkit-column-count: 2;
   column-count: 2;
@@ -4737,7 +4755,27 @@ figcaption {
   flex: 0 auto;
 }
 
+.container-24 {
+  max-width: 80%;
+}
+
+.list-item-7 {
+  padding-left: 0px;
+}
+
+.list-5 {
+  padding-left: 20px;
+}
+
+.list-6 {
+  padding-left: 20px;
+}
+
 @media screen and (min-width: 1280px) {
+  .text-block-2 {
+    width: 100%;
+  }
+
   .section-effort-dust {
     padding-top: 6rem;
   }
@@ -4910,8 +4948,10 @@ figcaption {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#5a7e90), color-stop(85%, rgba(90, 126, 145, 0.53)), to(hsla(0, 0%, 100%, 0))), url('../images/artem-gavrysh-F6-U5fGAOik-unsplash.jpg');
     background-image: linear-gradient(180deg, #5a7e90, rgba(90, 126, 145, 0.53) 85%, hsla(0, 0%, 100%, 0)), url('../images/artem-gavrysh-F6-U5fGAOik-unsplash.jpg');
     background-position: 0px 0px, 50% 0%;
-    background-size: auto, contain;
+    background-size: auto, cover;
     background-attachment: scroll, fixed;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
 
   .intro-content.cc-homepage {
@@ -4982,7 +5022,8 @@ figcaption {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 60px 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: center;
   }
 
@@ -5008,12 +5049,21 @@ figcaption {
     margin-left: 0px;
   }
 
+  .text-block-2 {
+    max-width: 1100px;
+  }
+
+  .margin-bottom-24px {
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
   .hero-heading-left {
     background-color: #f0edf2;
   }
 
   .hero-split {
-    max-width: 47%;
+    max-width: 100%;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
@@ -5154,6 +5204,10 @@ figcaption {
     margin-right: 0px;
     margin-left: 0px;
   }
+
+  .paragraph-4 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -5198,7 +5252,7 @@ figcaption {
   }
 
   .heading-jumbo {
-    width: 50%;
+    width: 60%;
     font-size: 56px;
     line-height: 70px;
   }
@@ -5394,6 +5448,7 @@ figcaption {
   }
 
   .services {
+    width: 90%;
     margin-bottom: 28px;
   }
 
@@ -5533,6 +5588,10 @@ figcaption {
     margin-right: 6%;
   }
 
+  .text-block-2 {
+    width: 100%;
+  }
+
   .container-6 {
     width: auto;
     max-width: 90%;
@@ -5541,7 +5600,7 @@ figcaption {
   }
 
   .hero-wrapper-two {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .hero-wrapper {
@@ -6224,7 +6283,7 @@ figcaption {
   }
 
   .heading-jumbo {
-    width: 60%;
+    width: 80%;
     font-size: 50px;
     line-height: 64px;
   }
@@ -6289,10 +6348,12 @@ figcaption {
   }
 
   .intro-header {
-    height: 300px;
-    background-position: 0px 0px, 50% 0%;
-    background-size: auto, 100%;
-    background-repeat: repeat, no-repeat;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5a7e90), color-stop(85%, rgba(90, 126, 144, 0.53)), to(hsla(0, 0%, 100%, 0))), url('../images/artem-gavrysh-F6-U5fGAOik-unsplash.jpg'), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+    background-image: linear-gradient(180deg, #5a7e90, rgba(90, 126, 144, 0.53) 85%, hsla(0, 0%, 100%, 0)), url('../images/artem-gavrysh-F6-U5fGAOik-unsplash.jpg'), linear-gradient(180deg, transparent, transparent);
+    background-position: 0px 0px, 50% 50%, 0px 0px;
+    background-size: auto, cover, auto;
+    background-repeat: repeat, repeat, repeat;
     opacity: 1;
   }
 
@@ -6480,6 +6541,10 @@ figcaption {
 
   .gallery-slider-right {
     right: -20px;
+  }
+
+  .text-block-2 {
+    width: 100%;
   }
 
   .hero-without-image {
@@ -7165,7 +7230,9 @@ figcaption {
   }
 
   .heading-jumbo {
-    width: 80%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 5px;
     padding-left: 5px;
     font-size: 36px;
@@ -7237,8 +7304,10 @@ figcaption {
 
   .intro-header {
     margin-bottom: 0px;
-    background-position: 0px 0px, 50% 0%;
-    background-size: auto, 200%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5a7e90), color-stop(85%, rgba(90, 126, 144, 0.53)), to(hsla(0, 0%, 100%, 0))), url('../images/artem-gavrysh-F6-U5fGAOik-unsplash.jpg'), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+    background-image: linear-gradient(180deg, #5a7e90, rgba(90, 126, 144, 0.53) 85%, hsla(0, 0%, 100%, 0)), url('../images/artem-gavrysh-F6-U5fGAOik-unsplash.jpg'), linear-gradient(180deg, transparent, transparent);
+    background-position: 0px 0px, 50% 50%, 0px 0px;
+    background-size: auto, cover, auto;
     opacity: 1;
   }
 
@@ -7314,6 +7383,10 @@ figcaption {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
+  }
+
+  .services {
+    padding-top: 18px;
   }
 
   .clients-wrapper-three-2 {
@@ -7446,6 +7519,18 @@ figcaption {
     right: -20px;
   }
 
+  .text-block-2 {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0.18px;
+    -webkit-column-count: auto;
+    column-count: auto;
+  }
+
+  .hero-without-image {
+    padding-top: 20px;
+  }
+
   .container-6 {
     max-width: none;
   }
@@ -7454,8 +7539,14 @@ figcaption {
     max-width: 100%;
   }
 
+  .margin-bottom-24px {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
   .heading {
     margin-top: auto;
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 30px;
   }
