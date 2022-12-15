@@ -5402,7 +5402,7 @@ figcaption {
     display: block;
   }
 }
-
+/* 
 @media screen and (max-width: 991px) {
   .section.cc-cta {
     padding-right: 0px;
@@ -6490,9 +6490,9 @@ figcaption {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-}
+} */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section {
     margin-right: 15px;
     margin-left: auto;
